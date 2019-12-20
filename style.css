@@ -5,6 +5,9 @@
 	position: absolute;
     right: 125px;
 }
+.lang{
+	width: 20px;
+}
 .menubtn{
 	width: 50px;
 	height: 50px;
@@ -20,6 +23,15 @@
 	opacity: 0;
 	position: fixed;
 }
+.numbers{
+    position: absolute;
+    right: 8px;
+    top: 29px;
+    width: 199px;
+}
+.numbers a{
+	text-decoration: none;
+}
 .fix{
 	background-color:rgba(0,0,0,0.6);
 }
@@ -33,8 +45,8 @@
     margin-top: 5px;
 }
 .sidemenutop{
-	width: 170px;
-	height: 328px;
+    width: 217px;
+    height: 371px;
 	margin-top: 100px;
 	background-color: #998675;
 	border:0;
@@ -49,22 +61,19 @@
 	position: fixed;
 	opacity: 0;
 }
-.sidemenutop a{
+.sidemenutop img{
+	margin-right: 10px;
+}
+.sidemenutop a, .sidemenutop li{
 	text-decoration: none;
 	color: white;
     font-size: 14px;
     font-family: 'Montserrat';
     font-weight: 400;
-    line-height: 35px;
+    padding-left: 0;
 }
 .sidemenutop li{
 	color: white; 
-}
-.sidemenutop li:nth-child(9),.sidemenutop li:nth-child(8){
-	list-style: none;
-	float: left;
-    margin-right: 25px;
-    margin-top: 10px;
 }
 .sidemenutop li:hover{
 	color: #736357;
@@ -95,16 +104,24 @@
 	font-family: 'Raleway';
 	font-weight: 400;
 }
-.NVB a{
+.NVB{
+	top: 0;
+}
+#mail{
+	margin-top: -8px;
+    display: block;
+}
+.NVB a, .numbers p{
 	color: #fff;
 	font-size: 1em;
     font-family: 'Montserrat';
     font-weight: 600;
+    margin: 0;
 }
-.NVB a:hover{
+.NVB a:hover, .numbers p:hover{
 	color: #c7b299;	
 }
-.NVB a:nth-child(9){
+.NVB a:nth-child(5){
 	margin-left: 57px;
 }
 .carousel-item, .carousel{
@@ -180,7 +197,7 @@ h4{
 	font-weight: 300;
 	margin: 0;
 	margin-top: 20px;
-	margin-bottom: 25px;	
+	margin-bottom: 25px;
 } 
 .fouragain a{
 	text-decoration: none;
@@ -272,7 +289,7 @@ h5{
 	font-size: 25px;
 	padding-top: 0;
 }
-.aboutustop p, .latest p{
+.aboutustop p, .latest p, .buyingmessage p{
 	font-size: 16px;
 	font-family: 'Montserrat';
 	font-weight: 300;
@@ -281,8 +298,7 @@ h5{
 	text-align: center;
 	display: block;
 	max-width: 760px;
-    padding-bottom: 22px;
-    padding-top: 20px;
+	padding: 20px 15px 22px 15px;
     line-height: 25px;
 }
 .aboutusinside img{
@@ -311,7 +327,7 @@ h5{
 	margin-bottom: 10px;
 	display: flex;
 }
-.advantages p::before{
+.advantages p::before, .needbefore::before{
 	content: '';
 	display: block;
     width: 38px;
@@ -321,6 +337,11 @@ h5{
 	background-image: url(img/beforemobile.png);
 	background-repeat: no-repeat;
 }
+.needbefore::before{
+	margin-top: 6px;
+	margin-left: 17px;
+	width: 28px;
+}
 .advert{
 	background-image: url(img/Backgroundpurchase.png);
 	background-repeat: no-repeat;
@@ -329,13 +350,13 @@ h5{
 	min-height: 150px;
 }
 .lefttext{
-	margin-top: 45px;
+	margin-top: 25px;
 	max-width: 532px;
 }
 #last{
 	font-size: 18px;
 	font-family: 'Montserrat';
-	font-weight: 300;
+	font-weight: 500;
 	color: #615855;	
 }
 .theme{
@@ -354,7 +375,7 @@ h5{
 	color: #c7b299;
 	padding-right: 7px;
 }
-.theme button{
+.theme button, #anketa button{
 	height: 50px;
 	width: 172px;
 	background-color: #998675;
@@ -364,23 +385,21 @@ h5{
 	border-radius: 5px;
 	margin-top: 55px;
 }
-.theme a{
+.theme a, #anketa button{
 	color: #fff;
 	font-size: 14px;
 	font-family: 'Raleway';
 	font-weight: 800;
 	text-decoration: none;	
 }
-/*.latest{
+.latest{
 	max-width: 1175px;
-	min-height: 1010px;
 }
 .middle_late ul{
 	display: flex;
 	justify-content: space-between;
-	width: 613px;
+	max-width: 613px;
 	margin: auto;
-	margin-top: 42px;
     padding-bottom: 40px;
 }
 .middle_late li:first-child{
@@ -389,6 +408,7 @@ h5{
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
 	background-color: #998675;
+	margin-bottom: 10px;
 }
 .nav-pills .nav-link {
     border: 1px solid;
@@ -407,19 +427,24 @@ h5{
 	margin:0;
 }
 .div-tab-six{
-	height: 340px;
+	height: 280px;
 	width: 370px;
 	z-index: 1;
 	position: relative;
-	margin-bottom: 20px;
+	margin: auto;
 }
 .picturesix{
-	width: 370px;
+	width: 100%;
 	height: 237px;
 	position: relative;
+	background-color: burlywood;
+}
+.picturesix img{
+	height: 100%;
+	width: 100%;
 }
 .picturesix img:first-child{
-	z-index: -1;
+	z-index: 1;
 	position: absolute;
 }
 .arrowsix{
@@ -432,46 +457,21 @@ h5{
  	width: 30px;
  	height: 10px;
 }
-.textsix{
-	background-image: url(img/bgsix1.png);
-	height: 103px;
-}
-.textsix p{
-	margin:0;
-}
-.textsix p:first-child{
-	font-size: 20px;
-	font-family: 'Raleway';
-	font-weight: 500;
-	color: #c7b299;
-	padding-top: 20px;
-	padding-left: 30px;
-}
-.textsix p:last-child{
-	font-size: 14px;
-	font-family: 'Montserrat';
-	font-weight: 300;
-	color: #d1d1d1;
-	padding-top: 5px;
-	padding-left: 30px;
-}
 .div-tab-2-six{
 	background: rgba(54,47,45,0.7);
 	z-index: 4;
 	position: absolute;
 	top: 0;
-	width: 370px;
+	width: 100%;
 	height: 237px;
 	align-content: center;
 	opacity: 0;
 }
 .linkssix{
 	position: absolute;
-    width: 85px;
-    height: 26px;
     display: flex;
     justify-content: space-between;
-    right: 142.5px;
+	right: 152.5px;
     bottom: 105.5px;
 }
 .div-tab-six:hover .textsix{
@@ -488,7 +488,7 @@ h5{
 }
 .div-tab-six:hover .textsix p:last-child{
 	color: #c7b299;
-}*/
+}
 .latest button{
 	height: 50px;
 	width: 172px;
@@ -503,10 +503,105 @@ h5{
 }
 .latest a{
 	color: #fff;
-	font-size: 14px;
+	font-size: 20px;
 	font-family: 'Raleway';
 	font-weight: 800;
 	text-decoration: none;	
+}
+
+.buyingmessage{
+	background-image: url(img/bgrealization.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	position: relative;
+}
+.insidemessage{
+	display: flex;
+	justify-content: space-around;
+	max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+#anketa{
+	max-width: 575px;
+	font-family: 'Montserrat';
+}
+form{
+	box-shadow: 0 0.7rem 4rem 0 rgba(153,134,117, 0.253);
+	border-radius: 25px;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+.rightinputs{
+	max-width: 500px;
+	margin: auto;
+}
+.rightinputs label{
+	font-weight: bold;
+}
+.text{
+	padding: 15px;
+	resize: none;
+	height: 100px;
+	border-radius: 20px;
+
+}
+.info{
+	height: 40px;
+    padding: 0 38px;
+    border-radius: 30px;
+}
+.info, .text{
+  display: block;
+  width: 100%;
+  border: 0;
+  outline: none;
+  transition: all .3s ease-out;
+  background-color: #e6e6e6;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#studytypetext{
+	display: none;
+}
+.info:focus, .text:focus{
+  box-shadow: 0 0 0 0.3rem rgba(153,134,117,0.7);
+  background-color: #fff; 
+}
+#anketa button{
+	margin: auto;
+    display: block;
+}
+.contacts{
+    width: 441px;
+	position: relative;
+    height: 700px;
+}
+.contacts img{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+.insidephone{
+	position: absolute;
+	top: 159px;
+    right: 140px;
+    text-align: center;
+}
+.insidephone span{
+	font-size: 1.3em;
+	font-family: 'Montserrat';	
+}
+.needbefore{
+	display: flex;
+}
+#down{
+	bottom: -125px;
+    right: 0px;
 }
 .numberend img{
 	margin: auto;
@@ -539,7 +634,7 @@ h5{
 	justify-content: space-between;
 	padding: 30px;
 }
-.endinside p, .endinside a{
+.endinside p{
     font-family: 'Montserrat';
     font-weight: 300;
 	color: #555555;
@@ -581,5 +676,24 @@ h5{
 @media screen and (max-width: 500px){
 	.carousel-item, .carousel {
 	    min-height: 425px !important; 
+	}
+
+	h3{
+		font-size: 2.5em;
+	}
+	h2{
+		font-size: 1em;
+	}
+	h4{
+		font-size: 0.7em;
+	}
+	.logo span{
+		font-size: 18px;
+	}
+	.fouragain p{
+		padding: 0 20px;
+	}
+	.contacts{
+
 	}
 }

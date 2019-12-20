@@ -19,20 +19,29 @@
 		  <a href="#"><img src="img/logo.png" alt="logo"></a>
 		  <span>Metal Art Master</span>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
+		  	<span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		    <div class="navbar-nav NVB">
-		      <a class="nav-item nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-		      <a class="nav-item nav-link" href="#">About us</a>
-		      <a class="nav-item nav-link" href="#">Catalog</a>
-		      <a class="nav-item nav-link" href="#">Our Blacksmiths</a>
-		      <a class="nav-item nav-link" href="#">Contact</a>
-		      <a class="nav-item nav-link" href="#"><img src="img/icon-cart.png" alt="cart"></a>
-		    </div>
+			  <div class="navbar-nav NVB">
+			      <a class="nav-item nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+			      <a class="nav-item nav-link" href="#about">About us</a>
+			      <a class="nav-item nav-link" href="#catalog">Catalog</a>
+			      <a class="nav-item nav-link" href="#contactus">Contact</a>
+			      <a class="nav-item nav-link" title="English"><img src="img/icons/english.svg" alt="english" class="lang"></a>
+			      <a class="nav-item nav-link" title="Français"><img src="img/icons/french.svg" alt="french" class="lang"></a>
+			      <a class="nav-item nav-link" title="Deutch"><img src="img/icons/german.svg" alt="german" class="lang"></a>
+			      <a class="nav-item nav-link" title="Русский"><img src="img/icons/russian.svg" alt="russian" class="lang"></a>
+			      <a class="nav-item nav-link" title="Українська"><img src="img/icons/ukrainian.svg" alt="ukrainian" class="lang"></a>
+			      <a class="nav-item nav-link" href="#contactus"><img src="img/icon-cart.png" alt="cart"></a>
+				  <div class="numbers">
+					  <p>+0990155164</p>
+					  <p id="mail">example@gmail.com</p>
+				  </div>
+			  </div>
 		  </div>		
 		</div>
 	</nav>
+
 	<button class="menubtn fixed-top">
 		<div class="linewh"></div>
 		<div class="linewh"></div>
@@ -40,12 +49,17 @@
 	</button>
 	<ul class="sidemenutop">
 		<li><a href="#">Home</a></li>		
-		<li><a href="#">About us</a></li>
-		<li><a href="#">Catalog</a></li>
-		<li><a href="#">Services</a></li>
-		<li><a href="#">Our Blacksmiths</a></li>
-		<li><a href="#">Contact</a></li>
-		<li><a href="#"><img src="img/icon-cart.png" alt="cartagain"></a></li>
+		<li><a href="#about">About us</a></li>
+		<li><a href="#catalog">Catalog</a></li>
+		<li><a href="#contactus">Contact</a></li>
+		<li><a class="nav-item nav-link" title="English"><img src="img/icons/english.svg" alt="english" class="lang">English</a></li>
+		<li><a class="nav-item nav-link" title="Français"><img src="img/icons/french.svg" alt="french" class="lang">Français</a></li>
+		<li><a class="nav-item nav-link" title="Deutch"><img src="img/icons/german.svg" alt="german" class="lang">Deutch</a></li>
+		<li><a class="nav-item nav-link" title="Русский"><img src="img/icons/russian.svg" alt="russian" class="lang">Русский</a></li>
+		<li><a class="nav-item nav-link" title="Українська"><img src="img/icons/ukrainian.svg" alt="ukrainian" class="lang">Українська</a></li>
+		<li><a href="#contactus"><img src="img/icon-cart.png" alt="cartagain"></a></li>
+		<li>+0990155164</li>
+		<li>example@gmail.com</li>
 	</ul>		
 	<!-- carousel -->
 	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -61,7 +75,7 @@
 					<h2>Modern Metal Art Workshop</p>
 					<h3>Metal Art Master</p>
 					<h4> Get yourself a custom made high-end forged product!</p>
-					<button><a href="#">MAKE AN ORDER</a></button>  
+					<button><a href="#contactus">MAKE AN ORDER</a></button>  
 	    		</div>
 	    	</div>
 	  		<div class="carousel-item">
@@ -70,7 +84,7 @@
 					<h2>Modern Metal Art Workshop</p>
 					<h3>Metal Art Master</p>
 					<h4> Get yourself a custom made high-end forged product!</p>
-					<button><a href="#">MAKE AN ORDER</a></button>  
+					<button><a href="#contactus">MAKE AN ORDER</a></button>  
 	    		</div>	  
 	    	</div>
 	  		<div class="carousel-item">
@@ -79,7 +93,7 @@
 					<h2>Modern Metal Art Workshop</p>
 					<h3>Metal Art Master</p>
 					<h4> Get yourself a custom made high-end forged product!</p>
-					<button><a href="#">MAKE AN ORDER</a></button>  
+					<button><a href="#contactus">MAKE AN ORDER</a></button>  
 	    		</div>
 	    	</div>
 		</div>
@@ -122,7 +136,7 @@
 		</div>
 	</div>
 	
-	<div class="aboutus">
+	<div class="aboutus" id="about">
 		<div class="aboutustop">
 			<h5>Metal Art Master is the Realization of your Ideas</h5>
 			<p>Homes are often decorated with the generally available piece of painting or ornament. However, how many people can say they own a piece of metal art?</p>
@@ -145,15 +159,15 @@
 		<div class="container theme">
 			<div class="lefttext">
 				<p><span id="first">Metal Art Master</span>Workshop</p>
-				<p id="last">Proffesional and Authentic</p>				
+				<p id="last">+0990155164 <br>example@gmail.com</p>				
 			</div>
-			<button><a href="#">ORDER NOW</a></button>
+			<button><a href="#contactus">CONTACT US</a></button>
 		</div>
 	</div>
 
-<!-- 	<div class="container latest">
-		<h5>Our Latest Projects</h5>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla culpa, amet exercitationem accusamus iure a! Aliquid dolorum possimus deleniti neque!</p>
+	<div class="container latest" id="catalog">
+		<h5>Our Projects</h5>
+		<p>Here you can check out some of our projects! You can contact us for more, our artists are capable of making any kind of forged products!</p>
 		<div class="middle_late">
 			<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
 				<li class="nav-item">
@@ -177,510 +191,366 @@
 					<div class="container tab">
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix1.png" alt="photosix">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Claritas Etiam Processus</p>
-								<p>Photography, Nature</p>
+								<img src="img/gallery/gates/1.jpg" alt="photosix1">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/gates/1.jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix2.png" alt="photosix2">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Quam Nutamus Farum</p>
-								<p>Graphic Design, Mock-Up</p>
+								<img src="img/gallery/gates/13 ескіз (4000.0).jpg" alt="photosix2">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/gates/13 ескіз (4000.0).jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix3.png" alt="photosix3">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Usus Legentis Videntur</p>
-								<p>Photography, Holiday</p>
+								<img src="img/gallery/gates/180 ескіз (4500.0).jpg" alt="photosix3">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/gates/180 ескіз (4500.0).jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix4.png" alt="photosix4">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Claritas Etiam Processus</p>
-								<p>Photography, Nature</p>
+								<img src="img/gallery/gates/29 (2000.0).jpg" alt="photosix4">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/gates/29 (2000.0).jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix5.png" alt="photosix5">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Quam Nutamus Farum</p>
-								<p>Graphic Design, Mock-Up</p>
+								<img src="img/gallery/gates/51 ескіз(3500.).jpg" alt="photosix5">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/gates/51 ескіз(3500.).jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix6.png" alt="photosix6">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Usus Legentis Videntur</p>
-								<p>Photography, Holiday</p>
+								<img src="img/gallery/gates/73 Ескіз (3000.0).jpg" alt="photosix6">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/gates/73 Ескіз (3000.0).jpg">OPEN</a>
 								</div>
 							</div>
-						</div>											
+						</div>										
 					</div>
 				</div>
 				<div class="tab-pane fade" id="pills-design" role="tabpanel" aria-labelledby="pills-design-tab">
 					<div class="container tab">
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix3.png" alt="photosix7">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Claritas Etiam Processus</p>
-								<p>Photography, Nature</p>
+								<img src="img/gallery/fences/20Ескіз (1200.0).jpg" alt="photosix7">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/fences/20Ескіз (1200.0).jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix4.png" alt="photosix8">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Quam Nutamus Farum</p>
-								<p>Graphic Design, Mock-Up</p>
+								<img src="img/gallery/fences/34 Ескіз (1100.0).jpg" alt="photosix8">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/fences/34 Ескіз (1100.0).jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix1.png" alt="photosix9">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Usus Legentis Videntur</p>
-								<p>Photography, Holiday</p>
+								<img src="img/gallery/fences/35 Ескіз (1100.0).jpg" alt="photosix9">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/fences/35 Ескіз (1100.0).jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix2.png" alt="photosix10">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Claritas Etiam Processus</p>
-								<p>Photography, Nature</p>
+								<img src="img/gallery/fences/37Ескіз (1100.0).jpg" alt="photosix10">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/fences/37Ескіз (1100.0).jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix6.png" alt="photosix11">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Quam Nutamus Farum</p>
-								<p>Graphic Design, Mock-Up</p>
+								<img src="img/gallery/fences/44 Ескіз (1100.0).jpg" alt="photosix11">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/fences/44 Ескіз (1100.0).jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix5.png" alt="photosix12">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Usus Legentis Videntur</p>
-								<p>Photography, Holiday</p>
+								<img src="img/gallery/fences/5ескіз(3000.0).jpg" alt="photosix12">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/fences/5ескіз(3000.0).jpg">OPEN</a>
 								</div>
 							</div>
-						</div>											
+						</div>										
 					</div>
 				</div>
 				<div class="tab-pane fade" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab">
 					<div class="container tab">
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix1.png" alt="photosix">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Claritas Etiam Processus</p>
-								<p>Photography, Nature</p>
+								<img src="img/gallery/railing/4 ескіз 1700.0.jpg" alt="photosix13">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/railing/4 ескіз 1700.0.jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix2.png" alt="photosix2">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Quam Nutamus Farum</p>
-								<p>Graphic Design, Mock-Up</p>
+								<img src="img/gallery/railing/11 ескіз 1000.0.jpg" alt="photosix14">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/railing/11 ескіз 1000.0.jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix3.png" alt="photosix3">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Usus Legentis Videntur</p>
-								<p>Photography, Holiday</p>
+								<img src="img/gallery/railing/12 - копия.jpg" alt="photosix15">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/railing/12 - копия.jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix4.png" alt="photosix4">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Claritas Etiam Processus</p>
-								<p>Photography, Nature</p>
+								<img src="img/gallery/railing/12 ескіз 1000.0.jpg" alt="photosix16">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/railing/12 ескіз 1000.0.jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix5.png" alt="photosix5">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Quam Nutamus Farum</p>
-								<p>Graphic Design, Mock-Up</p>
+								<img src="img/gallery/railing/17 - копия.jpg" alt="photosix17">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/railing/17 - копия.jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix6.png" alt="photosix6">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Usus Legentis Videntur</p>
-								<p>Photography, Holiday</p>
+								<img src="img/gallery/railing/10 - копия.jpg" alt="photosix18">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/railing/10 - копия.jpg">OPEN</a>
 								</div>
 							</div>
-						</div>											
+						</div>										
 					</div>
 				</div>
 				<div class="tab-pane fade" id="pills-illustration" role="tabpanel" aria-labelledby="pills-illustration-tab">
 					<div class="container tab">
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix3.png" alt="photosix7">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Claritas Etiam Processus</p>
-								<p>Photography, Nature</p>
+								<img src="img/gallery/overhangs/1.jpg" alt="photosix19">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/overhangs/1.jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix4.png" alt="photosix8">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Quam Nutamus Farum</p>
-								<p>Graphic Design, Mock-Up</p>
+								<img src="img/gallery/overhangs/102.JPG" alt="photosix20">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/overhangs/102.JPG">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix1.png" alt="photosix9">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Usus Legentis Videntur</p>
-								<p>Photography, Holiday</p>
+								<img src="img/gallery/overhangs/104.JPG" alt="photosix21">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/overhangs/104.JPG">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix2.png" alt="photosix10">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Claritas Etiam Processus</p>
-								<p>Photography, Nature</p>
+								<img src="img/gallery/overhangs/27.JPG" alt="photosix22">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/overhangs/27.JPG">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix6.png" alt="photosix11">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Quam Nutamus Farum</p>
-								<p>Graphic Design, Mock-Up</p>
+								<img src="img/gallery/overhangs/41.jpg" alt="photosix23">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/overhangs/41.jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix5.png" alt="photosix12">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Usus Legentis Videntur</p>
-								<p>Photography, Holiday</p>
+								<img src="img/gallery/overhangs/57.jpg" alt="photosix24">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/overhangs/57.jpg">OPEN</a>
 								</div>
 							</div>
-						</div>											
+						</div>										
 					</div>
 				</div>
 				<div class="tab-pane fade" id="pills-photo" role="tabpanel" aria-labelledby="pills-photo-tab">
 					<div class="container tab">
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix1.png" alt="photosix">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Claritas Etiam Processus</p>
-								<p>Photography, Nature</p>
+								<img src="img/gallery/other/1.jpg" alt="photosix25 ">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/other/1.jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix2.png" alt="photosix2">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Quam Nutamus Farum</p>
-								<p>Graphic Design, Mock-Up</p>
+								<img src="img/gallery/other/2.jpg" alt="photosix26">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/other/2.jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix3.png" alt="photosix3">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Usus Legentis Videntur</p>
-								<p>Photography, Holiday</p>
+								<img src="img/gallery/other/3.jpg" alt="photosix27">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/other/3.jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix4.png" alt="photosix4">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Claritas Etiam Processus</p>
-								<p>Photography, Nature</p>
+								<img src="img/gallery/other/4.jpg" alt="photosix28">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/other/4.jpg">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix5.png" alt="photosix5">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Quam Nutamus Farum</p>
-								<p>Graphic Design, Mock-Up</p>
+								<img src="img/gallery/other/5.JPG" alt="photosix29">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/other/5.JPG">OPEN</a>
 								</div>
 							</div>
 						</div>
 						<div class="div-tab-six">
 							<div class="picturesix">
-								<img src="img/photosix6.png" alt="photosix6">
-								<div class="arrowsix"></div>
-							</div>
-							<div class="textsix">
-								<p>Usus Legentis Videntur</p>
-								<p>Photography, Holiday</p>
+								<img src="img/gallery/other/6.jpg" alt="photosix30">
 							</div>
 							<div class="div-tab-2-six">
 								<div class="linkssix">
-									<a href="#"><img src="img/chainsix.png" alt="chain"></a>
-									<a href="#"><img src="img/searchsix.png" alt="searchsix"></a>
+									<a href="img/gallery/other/6.jpg">OPEN</a>
 								</div>
 							</div>
-						</div>											
+						</div>										
 					</div>
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
+
+	<div class="buyingmessage" id="contactus">
+		<h5>Contact us!</h5>
+		<p>Fill out this form to directly send us a message or order a desired metal artwork!</p>
+		<div class="insidemessage">
+			<div  id="anketa">
+				<form action="form.php" method="post">
+					<div class="rightinputs">
+						<label for="nametag">Input your first name:</label>
+						<input type="text" name="firstname" placeholder="First Name here" id="nametag" class="info">
+						<label for="lastnametag">Input your last name:</label>
+						<input type="text" placeholder="Last Name here" id="lastnametag" class="info" name="lastname">
+						<label for="phonenum">Input your phone number:</label>
+						<input type="phonenumber" id="phonenum" placeholder="Phone number here" class="info" name="number">
+						<label for="mailaddress">Input your email address:</label>
+						<input type="email" id="mailaddress" placeholder="example@gmail.com" class="info" name="email">
+						<label for="message">Input your message (maximum 500 characters):</label>	
+						<textarea name="message" id="message" maxlength="500" class="text" placeholder="Your message here"></textarea>			
+					</div>
+					<button type="submit" name="submit">SEND</button>
+				</form>
+			</div>
+			<div class="contacts">
+				<img src="img/phone.png" alt="phone">
+				<div class="insidephone">
+					<div class="textin">
+						<span class="needbefore"><b>Phone number:</b></span>
+						<span>+0990155164</span>
+						<span class="needbefore"><b>Email address:</b></span>
+						<span>example@gmail.com</span>						
+					</div>
+					<img src="img/icons/contacts.svg" alt="contact" id="down">	
+				</div>
+			</div>			
+		</div>
+	</div>
 
 	<div class="end">
 		<div class="endinside">
 			<p>@Copyright | Privacy Policy</p>
-			<p>Designed by <a href="#">MariaFedyk</a></p>			
+			<p>Designed by MariaFedyk</p>			
 		</div>
 	</div>
 </div>
