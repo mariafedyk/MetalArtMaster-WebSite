@@ -693,7 +693,9 @@ form{
 	.fouragain p{
 		padding: 0 20px;
 	}
-	.contacts{
-
-	}
+}
+@media screen and (max-width: 770px){
+	.theme button {
+	margin-top: 21px;
+    margin-bottom: 35px;}
 }
