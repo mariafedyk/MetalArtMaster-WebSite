@@ -1,9 +1,3 @@
-var btn = document.querySelector('.menubtn');
-var menu = document.querySelector('.sidemenutop');
-btn.addEventListener('click', function(){
-	menu.classList.toggle('active')
-});
-
 $(window).scroll(function(){
 
   var fix = $('.menu')
