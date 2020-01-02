@@ -683,3 +683,11 @@ form{
 		flex-direction: column;
 	}
 }
+@media screen and (min-width: 1500px){
+	.aboutusinside img {
+    	width: 34%;
+	}
+	.right-text {
+   		right: 23%;
+	}
+}
