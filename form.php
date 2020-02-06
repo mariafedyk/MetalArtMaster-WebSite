@@ -10,8 +10,8 @@ $mail->Host = 'smtp.gmail.com';
 $mail->Port = 587; 
 $mail->SMTPSecure = 'tls'; 
 $mail->SMTPAuth = true; 
-$mail->Username = "24.fedik.24@gmail.com"; // Your Gmail address.
-$mail->Password = "wxjyslsazvstvual"; // Your Gmail login password or App Specific Password.
+$mail->Username = "metalartsmaster@gmail.com"; // Your Gmail address.
+$mail->Password = "xyxbufcnervmsjjd"; // Your Gmail login password or App Specific Password.
 
 $name = $_POST['firstname'];
 $lastname = $_POST['lastname'];
@@ -21,7 +21,7 @@ $message = $_POST['message'];
 $email_body = "$name $lastname has a message: '$message'.\r\n Номер телефону : $phone_number.\r\n Пошта: $visit_email.";
 
 $mail->setFrom("$visit_email"); // Set the sender of the message.
-$mail->addAddress('fedykkmasha@gmail.com'); // Set the recipient of the message.
+$mail->addAddress('grecolopolos@gmail.com'); // Set the recipient of the message.
 $mail->Subject = "New client!"; // The subject of the message.
 
 // Choose to send either a simple text email...
